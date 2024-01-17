@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- font-awesome Css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="css/smartLogin.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="home">
+      <div class="container">
+        <div class="box-home mx-auto p-5 rounded rounded-3">
+          <span class="borderLineLogin"></span>
+          <h1 class="py-1">Quiz App</h1>
+          <div class="quiz-container mx-auto p-2 bg-white rounded" id="quiz">
+            <div class="quiz-header">
+              <h2 id="question">Question Text</h2>
+              <ul>
+                <li>
+                  <input type="radio" class="answer" name="answer" id="a" />
+                  <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                  <input type="radio" class="answer" name="answer" id="b" />
+                  <label id="b_text" for="b">Question</label>
+                </li>
+                <li>
+                  <input type="radio" class="answer" name="answer" id="c" />
+                  <label id="c_text" for="c">Question</label>
+                </li>
+                <li>
+                  <input type="radio" class="answer" name="answer" id="d" />
+                  <label id="d_text" for="d">Question</label>
+                </li>
+              </ul>
+            </div>
+            <button id="submit" class="submit-btn btn btn-info mt-5 w-100">
+              Submit
+            </button>
+            <button
+              id="logoutBtn"
+              class="Logout-btn btn btn-warning my-1 w-100"
+            >
+              LogOut
+            </button>
+          </div>
+          <div id="finish" class="finish text-center"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

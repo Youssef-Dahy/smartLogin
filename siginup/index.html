@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- font-awesome Css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="css/smartLogin.css" />
+  </head>
+  <body>
+    <section class="signUp">
+      <div class="container">
+        <div class="box-signUp mx-auto p-5 rounded rounded-3">
+          <span class="borderLine"></span>
+          <form action="../index.html">
+            <h1>Smart Login System</h1>
+            <div class="inputBox">
+              <input
+                type="text"
+                required
+                id="signName"
+                pattern="^[A-Z][a-zA-Z]*(?:-[A-Z][a-zA-Z]*)?$"
+                title="Please enter a valid name (e.g., Youssef-Dahy or Youssef)"
+              />
+              <span>UserName :</span>
+              <i></i>
+            </div>
+            <div class="text-center h6" id="userNameError"></div>
+            <div class="inputBox">
+              <input
+                type="text"
+                required
+                id="signEmail"
+                pattern="^(?=.*@(gmail|yahoo|hotmail)\.(com|net|org)$).*$"
+                title="Please enter a valid email address from Gmail, Yahoo, or Hotmail domains"
+              />
+              <span>UserEmail :</span>
+              <i></i>
+            </div>
+            <div class="text-center" id="emailError"></div>
+            <div class="inputBox">
+              <input
+                type="password"
+                required
+                id="signPassword"
+                pattern="^(?=.*[@*#]).{15,}$"
+                title="Password must be at least 15 characters long and contain at least one of the following characters: @, *, #"
+              />
+              <span>Password :</span>
+              <i></i>
+            </div>
+            <div class="text-center" id="passwordError"></div>
+            <div class="text-center" id="message"></div>
+            <button
+              type="button"
+              onclick="add()"
+              class="btn btn-outline-info mt-5"
+            >
+              Sign Up
+            </button>
+            <div class="links">
+              <p class="text-white">You have an account?</p>
+              <a href="../index.html">Signin</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

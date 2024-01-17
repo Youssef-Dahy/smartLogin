@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- font-awesome Css -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="assets/css/smartLogin.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="login">
+      <div class="container">
+        <div class="box mx-auto p-5 rounded rounded-3">
+          <span class="borderLineLogin"></span>
+          <form class="" action="home/index.html">
+            <h1>Smart Login System</h1>
+            <div class="inputBox">
+              <input
+                type="text"
+                id="signEmail"
+                pattern="^(?=.*@(gmail|yahoo|hotmail)\.(com|net|org)$).*$"
+                required="required"
+              />
+              <span>UserEmail :</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <input
+                type="password"
+                id="signPassword"
+                required="required"
+                pattern="^(?=.*[@*#]).{15,}$"
+              />
+              <span>Password :</span>
+              <i></i>
+            </div>
+            <div class="text-center" id="wrongPasswordorEmail"></div>
+            <div class="text-center" id="message"></div>
+            <button id="login" class="btn btn-outline-info mt-5">Login</button>
+            <div class="links">
+              <p class="text-white">Don’t have an account?</p>
+              <a href="siginup/index.html">Sign UP</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
